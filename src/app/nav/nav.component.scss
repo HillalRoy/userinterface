@@ -1,0 +1,73 @@
+$fst-color: #134262;
+$snd-color: #328BC3;
+$trd-color: #1C242E;
+$frt-color: #D8B310;
+$fith-color: #0B3C5D;
+
+
+header {
+  //Header
+
+
+
+
+
+
+  nav {
+    background: linear-gradient(90deg, $fst-color, $trd-color);
+
+
+
+    div.nav-bar {
+      display: flex;
+      position: relative;
+      // justify-self: right;
+
+      div#logo {
+        margin: 0 20px;
+        display: block;
+        font-weight: bold;
+        font-size: 30px;
+        color: #fff;
+      }
+
+      div.mob-nav-toggle {
+        display: none;
+      }
+
+      ul#nav-ul {
+        display: flex;
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        li {
+          margin: 0 10px;
+          list-style: none;
+          color: $frt-color;
+
+          &#work-li {
+            text-transform: uppercase;
+            padding: 10px 10px;
+
+            &:hover {
+              background: rgba(255, 255, 255, 0.4)
+            }
+          }
+
+
+          a {
+            display: block;
+            color: $frt-color;
+            padding: 10px 10px;
+            text-decoration: none;
+
+            &:hover {
+              background: rgba(255, 255, 255, 0.4)
+            }
+          }
+        }
+      }
+    }
+  }
+}
