@@ -4,24 +4,14 @@ $trd-color: #1C242E;
 $frt-color: #D8B310;
 $fith-color: #0B3C5D;
 
-
 header {
-  //Header
-
-
-
-
-
 
   nav {
     background: linear-gradient(90deg, $fst-color, $trd-color);
 
-
-
     div.nav-bar {
-      display: flex;
+      display: block;
       position: relative;
-      // justify-self: right;
 
       div#logo {
         margin: 0 20px;
@@ -29,6 +19,7 @@ header {
         font-weight: bold;
         font-size: 30px;
         color: #fff;
+        float: left;
       }
 
       div.mob-nav-toggle {
@@ -36,10 +27,8 @@ header {
       }
 
       ul#nav-ul {
-        display: flex;
-        position: absolute;
-        top: 0;
-        right: 0;
+        float: right;
+        display: inline-flex;
 
         li {
           margin: 0 10px;
@@ -55,7 +44,6 @@ header {
             }
           }
 
-
           a {
             display: block;
             color: $frt-color;
@@ -67,6 +55,9 @@ header {
             }
           }
         }
+      }
+      .clearfix{
+        clear: both;
       }
     }
   }
